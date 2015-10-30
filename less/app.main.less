@@ -1,0 +1,126 @@
+@black:  #111111;
+@white:  #ffffff;
+@blue:   #00b8d4;
+@purple: #ec407a;
+@orange: #ffab00;
+@green:  #00C853;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 2rem;
+  background: @purple;
+  color: @white;
+}
+
+h2 {
+  background: @blue;
+  color: @white;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.settings {
+  padding: 0rem 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+
+  .setting {
+    display: table;
+    margin: 0;
+    border-spacing: 1rem;
+
+    label, span, input {
+      display: table-cell;
+      vertical-align: middle;
+      -webkit-outline: none;
+      outline: none;
+    }
+
+    label {
+      font-weight: 400;
+    }
+  }
+}
+
+.track {
+  display: table;
+  width: 100%;
+  padding: 0rem 2rem;
+  box-sizing: border-box;
+  table-layout: fixed;
+  line-height: 2rem;
+
+  .title {
+    display: table-cell;
+    width: 15%;
+    font-weight: 400;
+    font-size: 1rem;
+    vertical-align: middle;
+  }
+
+  .beats-container {
+    display: table-cell;
+    vertical-align: middle;
+
+    .beats {
+      display: table;
+      background: lighten(@black, 85%);
+
+      > span {
+        display: table-cell;
+        box-sizing: border-box;
+        padding: 0.5rem;
+        vertical-align: middle;
+
+        &:nth-child(4n) {
+          border-right: thin solid lighten(@black, 50%);
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &.active {
+          background: lighten(@black, 80%);
+        }
+
+        button {
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          border-radius: 12.5px;
+          box-sizing: border-box;
+          border: medium solid lighten(@white, 70%);
+          -webkit-outline: none;
+          outline: none;
+          cursor: pointer;
+          background: @white;
+          vertical-align: middle;
+
+          &.on {
+            background: lighten(@black, 50%);
+          }
+
+          &.play {
+            background: @purple;
+          }
+        }
+      }
+    }
+  }
+}
