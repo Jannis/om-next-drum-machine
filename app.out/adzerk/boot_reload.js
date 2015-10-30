@@ -3,7 +3,7 @@ goog.provide('adzerk.boot_reload');
 goog.require('cljs.core');
 goog.require('adzerk.boot_reload.client');
 goog.require('drum_machine.app');
-adzerk.boot_reload.client.connect.call(null,"ws://localhost:43142",new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-jsload","on-jsload",-395756602),(function (){
+adzerk.boot_reload.client.connect.call(null,"ws://localhost:33936",new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-jsload","on-jsload",-395756602),(function (){
 return drum_machine.app.run.call(null);
 })], null));
 

@@ -29,7 +29,14 @@
   (render [this]
     (let [{:keys [settings/bpm settings/bars settings/beat]} (om/props this)]
       (dom/div #js {:className "app"}
-        (dom/h1 nil "Om Next Drum Machine")
+        (dom/header nil
+          (dom/h1 nil "Om Next Drum Machine")
+          (dom/p nil
+            "I know, this is really bad. Source: "
+            (dom/a
+              #js {:href "http://github.com/jannis/om-next-drum-machine/"}
+              "http://github.com/jannis/om-next-drum-machine")
+            "."))
         (dom/h2 nil "Settings")
         (dom/form #js {:className "settings"}
           (dom/p #js {:className "setting"}

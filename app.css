@@ -8,13 +8,26 @@ body {
   user-select: none;
   -webkit-user-select: none;
 }
-h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 0;
-  padding: 2rem;
+header {
   background: #ec407a;
   color: #ffffff;
+  padding: 1rem 0rem;
+}
+header h1 {
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 0rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+header p {
+  padding: 0rem 2rem;
+  margin-top: 0.5rem;
+}
+header a,
+header a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: thin solid #ffffff;
 }
 h2 {
   background: #00b8d4;
