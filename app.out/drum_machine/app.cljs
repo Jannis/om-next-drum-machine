@@ -53,6 +53,7 @@
 (defn run []
   ;; Beat generator
   (go
+    (<! (timeout 1000))
     (loop []
       (let [bpm (-> (parse [:settings/bpm]) :settings/bpm)]
         (<! (timeout (-> 60.0 (/ bpm) (* 1000))))

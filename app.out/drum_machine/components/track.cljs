@@ -9,7 +9,7 @@
     [:track/by-name (:name props)])
   static om/IQuery
   (query [this]
-    [:name :source :play-on])
+    [:name :source :play-on :volume])
   Object
   (toggle-beat [this n]
     (let [{:keys [play-on]} (om/props this)
@@ -19,7 +19,7 @@
                              (remove #{n} play-on)
                              (conj play-on n))})))
   (render [this]
-    (let [{:keys [name source play-on]} (om/props this)
+    (let [{:keys [name source play-on volume]} (om/props this)
           {:keys [bars beat]} (om/get-computed (om/props this))
           play (some #{beat} play-on)]
       (dom/div #js {:className "track"}
@@ -39,6 +39,9 @@
                        :onClick
                        #(.toggle-beat this n)})))))
         (when play
+          (some-> js/document
+                  (.getElementById (str name beat))
+                  (#(set! (.-volume %) volume)))
           (some-> js/document
                   (.getElementById (str name beat))
                   (.play)))))))
