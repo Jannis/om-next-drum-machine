@@ -1,0 +1,7 @@
+(ns drum-machine.util
+  (:require [clojure.string :refer [join]]))
+
+(defn class-names [m]
+  (->> (filter second m)
+       (map (comp name first))
+       (join " ")))

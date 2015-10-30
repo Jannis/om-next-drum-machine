@@ -1,0 +1,1 @@
+{:require [drum-machine.app adzerk.boot-reload], :init-fns [drum-machine.app/run]}

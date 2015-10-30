@@ -1,0 +1,103 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.app {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  user-select: none;
+  -webkit-user-select: none;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 2rem;
+  background: #ec407a;
+  color: #ffffff;
+}
+h2 {
+  background: #00b8d4;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+.settings {
+  padding: 0rem 1rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+.settings .setting {
+  display: table;
+  margin: 0;
+  border-spacing: 1rem;
+}
+.settings .setting label,
+.settings .setting span,
+.settings .setting input {
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-outline: none;
+  outline: none;
+}
+.settings .setting label {
+  font-weight: 400;
+}
+.track {
+  display: table;
+  width: 100%;
+  padding: 0rem 2rem;
+  box-sizing: border-box;
+  table-layout: fixed;
+  line-height: 2rem;
+}
+.track .title {
+  display: table-cell;
+  width: 15%;
+  font-weight: 400;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+.track .beats-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.track .beats-container .beats {
+  display: table;
+  background: #eaeaea;
+}
+.track .beats-container .beats > span {
+  display: table-cell;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+.track .beats-container .beats > span:nth-child(4n) {
+  border-right: thin solid #919191;
+}
+.track .beats-container .beats > span:last-child {
+  border-right: none;
+}
+.track .beats-container .beats > span.active {
+  background: #dddddd;
+}
+.track .beats-container .beats > span button {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  box-sizing: border-box;
+  border: medium solid #ffffff;
+  -webkit-outline: none;
+  outline: none;
+  cursor: pointer;
+  background: #ffffff;
+  vertical-align: middle;
+}
+.track .beats-container .beats > span button.on {
+  background: #919191;
+}
+.track .beats-container .beats > span button.play {
+  background: #ec407a;
+}

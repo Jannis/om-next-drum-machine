@@ -1,0 +1,6 @@
+// Compiled by ClojureScript 1.7.145 {}
+goog.provide('drum_machine.state');
+goog.require('cljs.core');
+drum_machine.state.initial_state = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tracks","tracks",-326768501),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),"Kick",new cljs.core.Keyword(null,"source","source",-433931539),"http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/kicks/61[kb]bass-kickers-2.wav.mp3",new cljs.core.Keyword(null,"play-on","play-on",-1655917734),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(1),(3)], null)], null),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),"Snare",new cljs.core.Keyword(null,"source","source",-433931539),"http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/snares/57[kb]acoustic_snare.aif.mp3",new cljs.core.Keyword(null,"play-on","play-on",-1655917734),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(2),(4)], null)], null)], null)], null);
+
+//# sourceMappingURL=state.js.map
