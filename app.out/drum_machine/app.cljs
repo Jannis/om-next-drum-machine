@@ -32,7 +32,7 @@
         (dom/header nil
           (dom/h1 nil "Om Next Drum Machine")
           (dom/p nil
-            "I know, this is really bad. Source: "
+            "I built the worst drum machine ever. Source: "
             (dom/a
               #js {:href "http://github.com/jannis/om-next-drum-machine/"}
               "http://github.com/jannis/om-next-drum-machine")
