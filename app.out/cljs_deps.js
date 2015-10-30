@@ -8,6 +8,7 @@ goog.addDependency("../om/next/protocols.js", ['om.next.protocols'], ['cljs.core
 goog.addDependency("../clojure/walk.js", ['clojure.walk'], ['cljs.core']);
 goog.addDependency("../om/next.js", ['om.next'], ['om.next.cache', 'clojure.zip', 'om.next.impl.parser', 'goog.string', 'goog.debug.Console', 'cljs.core', 'goog.object', 'goog.log', 'om.next.protocols', 'clojure.walk']);
 goog.addDependency("../drum_machine/reconciler.js", ['drum_machine.reconciler'], ['cljs.core', 'drum_machine.state', 'om.next']);
+goog.addDependency("../drum_machine/parsing/settings.js", ['drum_machine.parsing.settings'], ['cljs.core', 'drum_machine.reconciler']);
 goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
 goog.addDependency("../cljs/core/async/impl/ioc_helpers.js", ['cljs.core.async.impl.ioc_helpers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../clojure/browser/event.js", ['clojure.browser.event'], ['cljs.core', 'goog.events.EventTarget', 'goog.events.EventType', 'goog.events']);
@@ -30,7 +31,6 @@ goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.asy
 goog.addDependency("../drum_machine/parsing/tracks.js", ['drum_machine.parsing.tracks'], ['cljs.core', 'drum_machine.reconciler', 'om.next']);
 goog.addDependency("../drum_machine/util.js", ['drum_machine.util'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../drum_machine/components/track.js", ['drum_machine.components.track'], ['cljs.core', 'om.dom', 'drum_machine.util', 'om.next']);
-goog.addDependency("../drum_machine/parsing/settings.js", ['drum_machine.parsing.settings'], ['cljs.core', 'drum_machine.reconciler']);
 goog.addDependency("../drum_machine/app.js", ['drum_machine.app'], ['cljs.core', 'om.dom', 'cljs.core.async', 'drum_machine.parsing.tracks', 'drum_machine.reconciler', 'drum_machine.components.track', 'om.next', 'drum_machine.parsing.settings']);
 goog.addDependency("../adzerk/boot_reload.js", ['adzerk.boot_reload'], ['cljs.core', 'adzerk.boot_reload.client', 'drum_machine.app']);
 goog.addDependency("../boot/cljs/main707.js", ['boot.cljs.main707'], ['adzerk.boot_reload', 'cljs.core', 'drum_machine.app']);
