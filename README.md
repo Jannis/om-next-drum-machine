@@ -1,4 +1,4 @@
-# Om Next Kanban Demo
+# Om Next Drum Machine
 
 A simple web-based drum machine built with [Om
 Next](https://github.com/omcljs/om).
